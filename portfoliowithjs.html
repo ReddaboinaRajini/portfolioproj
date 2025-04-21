@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+        h2, h3 {
+            text-align: center;
+            color: #333;
+        }
+        .section {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+        }
+        p, a {
+            margin-top: 5px;
+            display: block;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Portfolio</h2>
+        
+        <div class="section">
+            <h3>Self Introduction</h3>
+            <p>Hello, I am Rajini Reddaboina. I am a dedicated software developer. I have graduated from KMIT college, Narayanaguda, Hyderabad.</p>
+        </div>
+        
+        <div class="section">
+            <h3>Skills</h3>
+            <p>Programming Languages: HTML, CSS, JavaScript, Python</p>
+            <p>Frameworks: React, Bootstrap</p>
+        </div>
+        
+        <div class="section">
+            <h3>Projects / Work Experience</h3>
+            <p><a href="https://github.com/ReddaboinaRajini/PresentWebProject" target="_blank">Project 1</a></p>
+        </div>
+        
+        <div class="section">
+            <h3>Feedback / Achievements</h3>
+            <p>Received positive feedback for our project.</p>
+        </div>
+        
+        <div class="section">
+            <h3>Education Profile</h3>
+            <p>B.Tech at KMIT, Hyderabad (2023-2026)</p>
+            <p>Diploma at Govt Polytechnic Warangal</p>
+            <p>SSC at ZPHS High School Upparapally</p>
+        </div>
+        
+        <div class="section contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:rajinireddaboina@gmail.com">rajinireddaboina@gmail.com</a></p>
+            <p>Phone: 6281043139</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/rajini-reddaboina-9777492a8" target="_blank">linkedin.com/in/yourprofile</a></p>
+        </div>
+        
+        <button onclick="viewGitHub()">View on GitHub</button>
+    </div>
+
+    <script>
+        
+        window.onload = function() {
+            alert("Welcome to Rajini Reddaboina's Portfolio!");
+        };
+
+        
+        function viewGitHub() {
+            let confirmAction = confirm("Do you want to view the GitHub repository?");
+            if (confirmAction) {
+                window.location.href = "https://github.com/ReddaboinaRajini"; 
+            }
+        }
+    </script>
+</body>
+</html>
